@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Personal profile and contact page of Flavia Ndahiro.">
   <title>Flavia Ndahiro | Profile and Contact</title>
-
-   <body>  
+   <body>
 
 </head>
 <body>
@@ -30,19 +29,98 @@
 
       <figure>
         <img
-          < label for="email">Email address *</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            autocomplete="email"
-            required>
-            <br>
-            <br>
-          </input>
-        </img>
-        <figcaption>Replace this with a photo of yourself.</figcaption>
+          src="photo/pic1.jpg"
+          alt="Portrait of Flavia Ndahiro smiling in front of a laptop"
+          width="300"
+          height="300">
       </figure>
 
+      <p>
+        Hello! I am a student learning web development. I enjoy building
+        simple, accessible web pages and I am currently learning HTML, CSS,
+        Git and GitHub.
+      </p>
+
+      <h3>My Interests</h3>
+      <ul>
+        <li>Web development</li>
+        <li>Problem solving</li>
+        <li>Reading</li>
+        <li>Music</li>
+      </ul>
+
+      <h3>My Learning Path</h3>
+      <ol>
+        <li>Learn HTML and CSS</li>
+        <li>Learn Git and GitHub</li>
+        <li>Learn JavaScript</li>
+        <li>Build and publish real projects</li>
+      </ol>
+    </article>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Me</h2>
+      <p>Fields marked with an asterisk (*) are required.</p>
+
+      <form action="#" method="post">
+
+        <label for="fullname">Full name *</label>
+        <input
+          type="text"
+          id="fullname"
+          name="fullname"
+          autocomplete="name"
+          required>
+          <br>
+          <br>
+
+        <label for="email">Email address *</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          autocomplete="email"
+          required>
+          <br>
+          <br>
+
+        <label for="category">Inquiry category *</label>
+        <select id="category" name="category" required>
+          <option value="">-- Please choose an option --</option>
+          <option value="general">General question</option>
+          <option value="collaboration">Collaboration</option>
+          <option value="feedback">Feedback</option>
+          <option value="other">Other</option>
+        </select>
+        <br>
+        <br>
+
+        <label for="message">Message *</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="6"
+          required></textarea>
+          <br>
+          <br>
+
+        <p>
+          <input type="checkbox" name="newsletter" name="newsletter" value="yes">
+          <label for="newsletter" class="checkbox-label">
+            Subscribe to my newsletter
+          </label>
+        </p>
+
+        <button type="submit">Send message</button>
+
+      </form>
+    </section>
+
+  </main>
 
   <footer>
+    <p>&copy 2026 Flavia Ndahiro. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
